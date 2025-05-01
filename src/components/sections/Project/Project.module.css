@@ -1,0 +1,102 @@
+.projectSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.projectContainer {
+  max-width: 38rem;
+  padding-left: auto;
+  padding-right: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectContainer h2 {
+  font-size: 1.875rem;
+  line-height: calc(2.25 / 1.875);
+  font-weight: bold;
+
+  margin-bottom: 2rem;
+
+  background: linear-gradient(
+    to right,
+    #3b82f6,
+    #22d3ee
+  ); /* blue-500 to cyan-400 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  line-height: 1.25; /* same as leading-tight */
+}
+
+.projectContent {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .projectContent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.tech {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  border-radius: 0.75rem;
+  font-size: small;
+  transition: all 100ms ease;
+}
+
+.tech:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.projectWrapper {
+  transition: all 100ms ease;
+}
+
+.projectWrapper:hover {
+  transform: translateY(-10px);
+}
+
+.projectTechs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.projectWrapper p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.viewBtn {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.viewBtn a {
+  text-decoration: none;
+  color: #3b82f6;
+  transition: all 100ms ease-in;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.viewBtn a:hover {
+  background-color: #3b82f6;
+  color: white;
+}
